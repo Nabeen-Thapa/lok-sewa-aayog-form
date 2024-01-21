@@ -1,0 +1,138 @@
+<htlm>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>log sewa aayog form validate</title>
+        <style>
+            .logo img {
+                float: left;
+                height: 130px;
+                width: 130px;
+            }
+
+            .psrms {
+                float: left;
+                padding-top: 30px;
+            }
+
+            .clear {
+                clear: both;
+            }
+
+            .signin {
+                background-color: rgb(53, 51, 51);
+            }
+
+            .keysign {
+                background-color: rgb(188, 188, 199);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="logo"><img src="images/nepali logo.jpg"></div>
+        <div class="psrms">
+            <h1>Public Service Rectruitment Management System</h1>
+        </div>
+        <div class="clear"></div>
+        <div class="signin">
+            <fieldset>
+                <a href="file:///C:/Users/Nabin%20Thapa/Desktop/web%20lab/lok%20sewa%20sign%20in.html"
+                    target="_blank"><input type="button" value="Sign In [पुराना उम्मेदवारहरुका लागि]" /></a>&nbsp;
+                &nbsp;
+                <a href="file:///C:/Users/Nabin%20Thapa/Desktop/web%20lab/log%20sewa%20sign%20up.html"
+                    target="_blank"><input type="button" value="Sign UP [नयाँ उम्मेदवारहरुका लागि]" /></a>&nbsp; &nbsp;
+                <a href="loksewamanual.pdf" target="_blank"><input type="button" value="User Manual" /></a>
+            </fieldset>
+        </div><br />
+        <fieldset>
+            Sign In [पुराना उम्मेदवारहरुका लागि]
+        </fieldset><br />
+        <fieldset>
+            <div class="keysign">
+                <fieldset>
+                    Sign in
+                </fieldset>
+            </div><br />
+            पासवर्ड विर्सिएको खण्डमा माथि रहेको Forget Password Menu मा क्लिक गरि Password Reset गर्न सक्नुहुनेछ ।<br />
+            You can reset your password by clicking forget password menu at the menu bar above.<br /><br />
+            <a href="loksewaphoto.jpg" target="_blank">अनुभव तथा विदाको विवरण अनवश्यक पर्ने पदहरुका लागि मात्र (अनुभव
+                तथा विदाको विवरण सम्बन्धि फाराम dowanload गर्न click गर्नुहोस्)</a>
+            <br /><br />
+            Name(in english)<br />
+            <hr />
+            <br />
+
+            <form action="" method="" onsubmit="return validation()">
+                First Name<input type="text" placeholder="Enter your fist name" name="name" id="idfname">
+                Middle Name<input type="text" placeholder="Enter your middle name" name="mname" id="idmname">
+                Last Name <input type="text" placeholder="Enter your last name" name="lname" id="idlname"><br /><br />
+                नाम(नेपालीमा)<br />
+                <hr />
+                <br />
+                बीचको नाम <input type="text" placeholder="बीचको नाम लेख्नुहोस्">
+                अन्तिम नाम<input type="text" placeholder="अन्तिम नाम लेख्नुहोस्"><br /><br />
+                पहिलो नाम<input type="text" placeholder="पहिलो नाम लेख्नुहोस्">
+                जन्म मिति
+                <hr />
+                अाफ्नो नागरिकता प्रमाणपत्रमा भएको जन्ममिति उल्लेख गर्नुहोस् ।<br />  
+               <br />
+                वि.सं.मा:<input type="date">
+                र्इस्वी सम्वत्<input type="text" placeholder="MM/DD/YYYY" id="iddate"><br />
+                लिङ्ग<select>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br /><br />
+                बुबाको नाम(नेपालीमा)
+                <hr />
+                पहिलो नाम<input type="text" placeholder="पहिलो नाम लेख्नुहोस्">
+                बीचको नाम <input type="text" placeholder="बीचको नाम लेख्नुहोस्">
+                अन्तिम नाम<input type="text" placeholder="अन्तिम नाम लेख्नुहोस्"><br /><br />
+                अामाको नाम(नेपालीमा)<br />
+                <hr />
+                पहिलो नाम<input type="text" placeholder="पहिलो नाम लेख्नुहोस्">
+                बीचको नाम<input type="text" placeholder="बीचको नाम लेख्नुहोस्">
+                अन्तिम नाम<input type="text" placeholder="अन्तिम नाम लेख्नुहोस्"><br />
+                <br />
+                बाजेको नाम(नेपालीमा)<br />
+                <hr />
+                पहिलो नाम<input type="text" placeholder="पहिलो नाम लेख्नुहोस्">
+                बीचको नाम <input type="text" placeholder="बीचको नाम लेख्नुहोस्">
+                अन्तिम नाम<input type="text" placeholder="अन्तिम नाम लेख्नुहोस्"><br /><br />
+                पति/पत्नीको नाम(नेपालीमा)<br />
+                <hr />
+                पहिलो नाम<input type="text" placeholder="पहिलो नाम लेख्नुहोस्">
+                बीचको नाम<input type="text" placeholder="बीचको नाम लेख्नुहोस्">
+                अन्तिम नाम<input type="text" placeholder="अन्तिम नाम लेख्नुहोस्"><br /><br />
+                नागरिकता
+                <hr />
+                नागरिकता नं.<input type="text">
+                जारी गर्ने जिल्ला<input type="text" placeholder="जारी गर्ने जिल्लाको लेख्नुहोस्">
+                जारी मिति<input type="date"><br /><br />
+                सम्पर्क
+                <hr />
+                र्इमेल<input type="email" placeholder="enter your email address" id="idemail">
+                मोबाईल नम्बर<input type="text" placeholder="enter your moblile number" id="idnumber">
+                <br /><br />
+                अन्य जानकारी
+                <hr />
+                जात<input type="text">
+                धर्म <input type="text">
+                अन्य धर्म भएमा उल्लेख गर्नुहोस्<input type="text"><br />
+                <hr />
+                वैवाहिक िस्थित<input type="text">
+                रोजगारको अवस्था <input type="text">
+                अन्य अवस्थामा भएमा उल्लेख गर्नुहोस्<input type="text"><br /><br />
+                <hr />
+                मातृभाषा<input type="text">
+                शारिरिक रुपमा अशक्त हुनुहुन्छ <input type="text">
+                कस्तो प्रकारको अशक्तता हो खुलाउनुहोस्<input type="text"><br /><br />
+                <span id="error_msg"></span><br />
+                <a href="signinsave.html" target="_blank"><input type="submit" value="Save" id="idsubmit"/></a>
+            </form>
+        </fieldset>
+
+        <script src="lok_sewa_js.js"></script>
+    </body>
+
+    </html>
